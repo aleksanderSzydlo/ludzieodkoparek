@@ -178,15 +178,11 @@
   font-size: 1.2rem;
 }
 
-.ctaSection {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .ctaBtn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   padding: 1.2rem 2rem;
   background: #ffa500;
   border: none;
@@ -200,8 +196,6 @@
   letter-spacing: 1px;
   font-family: inherit;
   box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
-  text-decoration: none;
-  display: inline-block;
 }
 
 .ctaBtn:hover {
@@ -210,27 +204,30 @@
   box-shadow: 0 6px 20px rgba(255, 165, 0, 0.4);
 }
 
+.brochureSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .brochureBtn {
-  padding: 1.2rem 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
   background: #fff;
   border: 2px solid #ffa500;
-  color: #000;
-  font-size: 1.1rem;
-  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 600;
   border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: inherit;
   text-decoration: none;
-  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .brochureBtn:hover {
   background: #ffa500;
+  color: #000;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(255, 165, 0, 0.3);
 }
 
 /* Mobile styles */
