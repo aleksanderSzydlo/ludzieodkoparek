@@ -7,48 +7,51 @@ const Pricing = () => {
   const pricingPlans = [
     {
       id: 1,
-      name: 'Mini',
-      description: 'Idealne do małych prac',
-      hourly: '200-250',
-      daily: '1400-1750',
+      name: 'Wynajem dzienny',
+      description: 'Podstawowa opcja wynajmu',
+      hourly: null,
+      daily: '350-450',
       features: [
-        'Minikoparka 1.5-3.5T',
-        'Doświadczony operator',
-        'Transport do 50km gratis',
+        'Minikoparka SANY SY18C 1,9T',
+        'Pełny zbiornik paliwa',
+        'Transport do 30km gratis',
         'Podstawowe akcesoria',
-        'Ubezpieczenie OC/AC'
+        'Ubezpieczenie OC/AC',
+        'Instruktaż obsługi'
       ],
       popular: false
     },
     {
       id: 2,
-      name: 'Standard',
+      name: 'Wynajem tygodniowy',
       description: 'Najpopularniejszy wybór',
-      hourly: '350-450',
-      daily: '2450-3150',
+      hourly: null,
+      daily: '300-400',
       features: [
-        'Koparka 14-20T',
-        'Certyfikowany operator',
-        'Transport do 100km gratis',
+        'Minikoparka SANY SY18C 1,9T',
+        'Pełny zbiornik paliwa',
+        'Transport do 50km gratis',
         'Pełen zestaw akcesoriów',
         'Ubezpieczenie OC/AC',
+        'Instruktaż obsługi',
         'Wsparcie techniczne 24/7'
       ],
       popular: true
     },
     {
       id: 3,
-      name: 'Heavy',
-      description: 'Do dużych projektów',
-      hourly: '600-800',
-      daily: '4200-5600',
+      name: 'Wynajem miesięczny',
+      description: 'Najlepsza cena',
+      hourly: null,
+      daily: '250-350',
       features: [
-        'Koparka 30-45T',
-        'Specjalistyczny operator',
+        'Minikoparka SANY SY18C 1,9T',
+        'Pełny zbiornik paliwa',
         'Transport bez limitu',
         'Specjalistyczne akcesoria',
         'Ubezpieczenie OC/AC',
-        'Dedykowany opiekun projektu',
+        'Instruktaż obsługi',
+        'Dedykowany opiekun',
         'Serwis 24/7'
       ],
       popular: false
@@ -60,23 +63,8 @@ const Pricing = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>Cennik</h2>
         <p className={styles.subtitle}>
-          Transparentne ceny bez ukrytych kosztów
+          Proste ceny bez ukrytych kosztów. Wynajmij na dzień, tydzień lub miesiąc.
         </p>
-
-        <div className={styles.toggle}>
-          <button
-            className={`${styles.toggleBtn} ${billingType === 'hourly' ? styles.active : ''}`}
-            onClick={() => setBillingType('hourly')}
-          >
-            Stawka godzinowa
-          </button>
-          <button
-            className={`${styles.toggleBtn} ${billingType === 'daily' ? styles.active : ''}`}
-            onClick={() => setBillingType('daily')}
-          >
-            Stawka dzienna
-          </button>
-        </div>
 
         <div className={styles.grid}>
           {pricingPlans.map(plan => (
@@ -87,11 +75,11 @@ const Pricing = () => {
                 <p className={styles.planDescription}>{plan.description}</p>
                 <div className={styles.price}>
                   <span className={styles.amount}>
-                    {billingType === 'hourly' ? plan.hourly : plan.daily}
+                    {plan.daily}
                   </span>
                   <span className={styles.currency}>zł</span>
                   <span className={styles.period}>
-                    /{billingType === 'hourly' ? 'godz' : 'dzień'}
+                    /dzień
                   </span>
                 </div>
               </div>
@@ -112,8 +100,8 @@ const Pricing = () => {
 
         <div className={styles.note}>
           <p>
-            * Ceny orientacyjne. Ostateczna wycena zależy od lokalizacji, czasu trwania 
-            projektu i specyfiki prac. Skontaktuj się z nami po bezpłatną wycenę.
+            * Ceny orientacyjne za dzień wynajmu. Rabaty przy wynajmie tygodniowym i miesięcznym. 
+            Ostateczna wycena zależy od lokalizacji i czasu trwania wynajmu. Skontaktuj się z nami po bezpłatną wycenę.
           </p>
         </div>
       </div>

@@ -18,14 +18,14 @@ const Hero = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Wynajem koparek z operatorem
+            Wynajem minikoparek
           </h1>
           <p className={styles.subtitle}>
-            Sprzęt, który robi robotę. Operator, który wie co robi.
+            Wynajmij i prowadź sam. Bez papierów, bez komplikacji.
           </p>
           <p className={styles.description}>
-            Profesjonalne usługi koparek z doświadczonymi operatorami. 
-            Realizujemy projekty budowlane każdej skali – szybko, sprawnie i bezpiecznie.
+            Minikoparka SANY SY18C 1,9 ton - nowoczesny sprzęt, który możesz wynająć i obsługiwać samodzielnie. 
+            Bez uprawnień, bez operatora, bez zbędnych formalności.
           </p>
           <div className={styles.cta}>
             <button className={styles.primaryBtn} onClick={handleCall}>

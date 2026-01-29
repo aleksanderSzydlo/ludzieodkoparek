@@ -9,28 +9,28 @@ const About = () => {
           <div className={styles.textContent}>
             <h3 className={styles.subtitle}>Kim jesteśmy</h3>
             <p className={styles.description}>
-              Firma świadcząca usługi wynajmu koparek z operatorem. Działamy od 2010 roku. 
-              Specjalizujemy się w pracach ziemnych, wykopach i wyburzeniach.
+              Wynajmujemy minikoparki bez operatora. Działamy od 2010 roku. 
+              Oferujemy prosty i bezproblemowy wynajem sprzętu budowlanego bez zbędnych formalności.
             </p>
 
-            <h3 className={styles.subtitle}>Dla kogo pracujemy</h3>
+            <h3 className={styles.subtitle}>Dla kogo</h3>
             <p className={styles.description}>
-              Współpracujemy zarówno z firmami budowlanymi, jak i klientami prywatnymi. 
-              Od małych wykopów pod fundamenty, po duże projekty infrastrukturalne.
+              Dla każdego, kto potrzebuje minikoparki. Firmy budowlane, rzemieślnicy, właściciele domów - 
+              od małych wykopów pod fundamenty, po prace ogrodowe i instalacyjne.
             </p>
 
-            <h3 className={styles.subtitle}>Dlaczego z operatorem</h3>
+            <h3 className={styles.subtitle}>Dlaczego bez operatora</h3>
             <ul className={styles.bulletPoints}>
-              <li>Nie musisz mieć uprawnień ani doświadczenia</li>
-              <li>Operator zna możliwości maszyny i pracuje efektywnie</li>
-              <li>Bierzemy odpowiedzialność za sprzęt i jakość pracy</li>
-              <li>To po prostu szybciej i bezpieczniej</li>
+              <li>Nie potrzebujesz żadnych uprawnień ani dokumentów</li>
+              <li>Minikoparką steruje się intuicyjnie - każdy da radę</li>
+              <li>Niższa cena - płacisz tylko za sprzęt</li>
+              <li>Pełna swoboda - pracujesz we własnym tempie</li>
             </ul>
           </div>
           <div className={styles.imageContent}>
             <div className={styles.imagePlaceholder}>
               <span className={styles.placeholderIcon}>🏗️</span>
-              <p>Zdjęcie operatora przy pracy</p>
+              <p>SANY SY18C w akcji</p>
             </div>
           </div>
         </div>
