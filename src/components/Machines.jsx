@@ -104,7 +104,16 @@ const Machines = () => {
           </ul>
         </div>
 
-        <button className={styles.ctaBtn}>Zapytaj o dostępność</button>
+        <div className={styles.ctaSection}>
+          <button className={styles.ctaBtn}>Zapytaj o dostępność</button>
+          <a 
+            href="/broszura-sany-sy18c.pdf" 
+            download 
+            className={styles.brochureBtn}
+          >
+            📄 Pobierz broszurę PDF
+          </a>
+        </div>
       </div>
     </section>
   );
