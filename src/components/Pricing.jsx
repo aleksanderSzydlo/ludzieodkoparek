@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import styles from './Pricing.module.css';
 
 const Pricing = () => {
-  const [billingType, setBillingType] = useState('hourly');
 
   const pricingPlans = [
     {

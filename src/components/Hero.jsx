@@ -2,7 +2,7 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
   const handleCall = () => {
-    window.location.href = 'tel:+48123456789';
+    window.location.href = 'tel:+48692426974';
   };
 
   const scrollToContact = () => {

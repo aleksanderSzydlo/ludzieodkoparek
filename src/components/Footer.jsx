@@ -27,9 +27,9 @@ const Footer = () => {
               Doświadczenie w branży budowlanej.
             </p>
             <div className={styles.social}>
-              <a href="#" className={styles.socialLink} aria-label="Facebook">📘</a>
-              <a href="#" className={styles.socialLink} aria-label="Instagram">📷</a>
-              <a href="#" className={styles.socialLink} aria-label="LinkedIn">💼</a>
+              <a href="https://facebook.com" className={styles.socialLink} aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+              <a href="https://instagram.com" className={styles.socialLink} aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+              <a href="https://linkedin.com" className={styles.socialLink} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">💼</a>
             </div>
           </div>
 
