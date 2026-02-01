@@ -6,6 +6,13 @@ const Machines = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const handleContactScroll = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const scrollGallery = (direction) => {
     if (galleryRef.current) {
       const scrollAmount = 420; // 400px image + 20px gap
@@ -146,7 +153,7 @@ const Machines = () => {
           </a>
         </div>
 
-        <button className={styles.ctaBtn}>Zapytaj o dostępność</button>
+        <button className={styles.ctaBtn} onClick={handleContactScroll}>Zapytaj o dostępność</button>
 
         <div className={styles.gallerySection}>
           <h3 className={styles.sectionTitle}>Galeria</h3>
