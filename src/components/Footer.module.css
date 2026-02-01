@@ -118,6 +118,18 @@
   line-height: 1.6;
 }
 
+.address a {
+  color: #ffa500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.address a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+
 .emergency {
   margin-top: 0.5rem;
   padding: 0.75rem;

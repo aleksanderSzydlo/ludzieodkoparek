@@ -88,6 +88,18 @@
   line-height: 1.6;
 }
 
+.infoItem a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.infoItem a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+
 .emergencyContact {
   background: #fff3e0;
   padding: 1.5rem;
@@ -107,6 +119,18 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0;
+}
+
+.emergencyContact a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.emergencyContact a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
 }
 
 .form {

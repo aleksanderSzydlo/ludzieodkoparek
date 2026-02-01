@@ -54,8 +54,8 @@ const Footer = () => {
           <div className={styles.column}>
             <h4 className={styles.columnTitle}>Kontakt</h4>
             <address className={styles.address}>
-              <p>📞 +48 692 426 974</p>
-              <p>📞 +48 664 716 960</p>
+              <p>📞 <a href="tel:+48692426974">+48 692 426 974</a></p>
+              <p>📞 <a href="tel:+48664716960">+48 664 716 960</a></p>
               <p>📧 biuro@ludzieodkoparek.pl</p>
               <p className={styles.emergency}>
                 🚨 Awaryjny: +48 692 426 974

@@ -40,8 +40,8 @@ const Contact = () => {
                 <span className={styles.infoIcon}>📞</span>
                 <div>
                   <strong>Telefon</strong>
-                  <p>+48 692 426 974</p>
-                  <p>+48 664 716 960</p>
+                  <p><a href="tel:+48692426974">+48 692 426 974</a></p>
+                  <p><a href="tel:+48664716960">+48 664 716 960</a></p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -55,7 +55,7 @@ const Contact = () => {
                 <span className={styles.infoIcon}>📍</span>
                 <div>
                   <strong>Adres</strong>
-                  <p>ul. Kuźnicka 28f<br />Mikołów</p>
+                  <p><a href="https://maps.google.com/?q=ul.+Kuźnicka+28f,+Mikołów" target="_blank" rel="noopener noreferrer">ul. Kuźnicka 28f<br />Mikołów</a></p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -69,7 +69,7 @@ const Contact = () => {
 
             <div className={styles.emergencyContact}>
               <strong>🚨 Kontakt awaryjny 24/7:</strong>
-              <p>+48 692 426 974</p>
+              <p><a href="tel:+48692426974">+48 692 426 974</a></p>
             </div>
           </div>
 
