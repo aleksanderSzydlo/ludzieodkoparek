@@ -181,6 +181,34 @@
   line-height: 1.6;
 }
 
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .pricing {
+    padding: 5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card.popular {
+    transform: scale(1);
+  }
+
+  .planName {
+    font-size: 1.5rem;
+  }
+
+  .amount {
+    font-size: 2rem;
+  }
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .pricing {

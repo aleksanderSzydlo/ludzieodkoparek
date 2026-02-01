@@ -415,6 +415,40 @@
   backdrop-filter: blur(10px);
 }
 
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .machines {
+    padding: 5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .specsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .machineName {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .galleryImage {
+    min-width: 350px;
+    max-height: 350px;
+  }
+
+  .lightboxArrow {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .machines {
