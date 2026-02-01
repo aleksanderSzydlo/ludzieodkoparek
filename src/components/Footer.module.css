@@ -140,6 +140,18 @@
   font-weight: 700;
 }
 
+.emergency a {
+  color: #ffa500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+.emergency a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+
 .bottom {
   display: flex;
   justify-content: space-between;

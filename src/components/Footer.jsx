@@ -58,7 +58,7 @@ const Footer = () => {
               <p>📞 <a href="tel:+48664716960">+48 664 716 960</a></p>
               <p>📧 biuro@ludzieodkoparek.pl</p>
               <p className={styles.emergency}>
-                🚨 Awaryjny: +48 692 426 974
+                🚨 Awaryjny: <a href="tel:+48692426974">+48 692 426 974</a>
               </p>
             </address>
           </div>
