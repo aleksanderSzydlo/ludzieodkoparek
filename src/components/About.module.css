@@ -78,15 +78,25 @@
   content: '•';
   position: absolute;
   left: 0;
+  top: 0.8rem;
   color: #ffa500;
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .imageContent {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.aboutImage {
+  width: 100%;
+  max-width: 1125px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 .imagePlaceholder {

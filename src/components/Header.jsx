@@ -30,8 +30,8 @@ const Header = () => {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <span className={styles.logoIcon}>🚜</span>
-          Ludzie od koparek
+          <img src="/logos/logo5.png" alt="Logo" className={styles.logo5} />
+          <span className={styles.logoText}>Ludzie od Koparek</span>
         </div>
 
         <button 

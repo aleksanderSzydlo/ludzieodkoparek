@@ -20,12 +20,11 @@ const Footer = () => {
         <div className={styles.content}>
           <div className={styles.column}>
             <h3 className={styles.logo}>
-              <span className={styles.logoIcon}>🚜</span>
-              Ludzie od koparek
+              <img src="/logos/logo2.png" alt="Ludzie od koparek logo" className={styles.logoImage} />
             </h3>
             <p className={styles.description}>
-              Profesjonalny wynajem koparek z operatorem. 
-              15 lat doświadczenia w branży budowlanej.
+              Profesjonalny wynajem minikoparek bez operatora. 
+              Doświadczenie w branży budowlanej.
             </p>
             <div className={styles.social}>
               <a href="#" className={styles.socialLink} aria-label="Facebook">📘</a>
@@ -49,21 +48,17 @@ const Footer = () => {
             <h4 className={styles.columnTitle}>Usługi</h4>
             <nav className={styles.links}>
               <a href="#">Wynajem koparek</a>
-              <a href="#">Prace ziemne</a>
-              <a href="#">Wyburzenia</a>
-              <a href="#">Usługi transportowe</a>
-              <a href="#">Doradztwo techniczne</a>
             </nav>
           </div>
 
           <div className={styles.column}>
             <h4 className={styles.columnTitle}>Kontakt</h4>
             <address className={styles.address}>
-              <p>📞 +48 123 456 789</p>
-              <p>📧 kontakt@ludzieodkoparek.pl</p>
-              <p>📍 ul. Budowlana 123<br />00-000 Warszawa</p>
+              <p>📞 +48 692 426 974</p>
+              <p>📞 +48 664 716 960</p>
+              <p>📧 biuro@ludzieodkoparek.pl</p>
               <p className={styles.emergency}>
-                🚨 Awaryjny: +48 999 888 777
+                🚨 Awaryjny: +48 692 426 974
               </p>
             </address>
           </div>

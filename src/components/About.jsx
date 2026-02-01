@@ -9,7 +9,8 @@ const About = () => {
           <div className={styles.textContent}>
             <h3 className={styles.subtitle}>Kim jesteśmy</h3>
             <p className={styles.description}>
-              Wynajmujemy minikoparki bez operatora. Działamy od 2010 roku. 
+              Wynajmujemy minikoparki bez operatora. Działamy na terenie całego kraju, 
+              ale naszą siedzibę mamy w Mikołowie, a główny obszar działalności to Śląsk. 
               Oferujemy prosty i bezproblemowy wynajem sprzętu budowlanego bez zbędnych formalności.
             </p>
 
@@ -28,10 +29,11 @@ const About = () => {
             </ul>
           </div>
           <div className={styles.imageContent}>
-            <div className={styles.imagePlaceholder}>
-              <span className={styles.placeholderIcon}>🏗️</span>
-              <p>SANY SY18C w akcji</p>
-            </div>
+            <img 
+              src="/logos/logo1.png" 
+              alt="Ludzie od Koparek" 
+              className={styles.aboutImage}
+            />
           </div>
         </div>
       </div>

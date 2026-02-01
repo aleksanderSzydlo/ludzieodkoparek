@@ -40,21 +40,22 @@ const Contact = () => {
                 <span className={styles.infoIcon}>📞</span>
                 <div>
                   <strong>Telefon</strong>
-                  <p>+48 123 456 789</p>
+                  <p>+48 692 426 974</p>
+                  <p>+48 664 716 960</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoIcon}>📧</span>
                 <div>
                   <strong>Email</strong>
-                  <p>kontakt@ludzieodkoparek.pl</p>
+                  <p>biuro@ludzieodkoparek.pl</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoIcon}>📍</span>
                 <div>
                   <strong>Adres</strong>
-                  <p>ul. Budowlana 123<br />00-000 Warszawa</p>
+                  <p>ul. Kuźnicka 28f<br />Mikołów</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -68,7 +69,7 @@ const Contact = () => {
 
             <div className={styles.emergencyContact}>
               <strong>🚨 Kontakt awaryjny 24/7:</strong>
-              <p>+48 999 888 777</p>
+              <p>+48 692 426 974</p>
             </div>
           </div>
 
@@ -111,7 +112,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  placeholder="+48 123 456 789"
+                  placeholder="+48 692 426 974"
                 />
               </div>
             </div>
