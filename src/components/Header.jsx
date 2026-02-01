@@ -71,7 +71,7 @@ const Header = () => {
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('kontakt')} className={styles.ctaButton}>
+              <button onClick={() => scrollToSection('contact')} className={styles.ctaButton}>
                 Kontakt
               </button>
             </li>
