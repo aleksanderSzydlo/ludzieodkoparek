@@ -29,10 +29,14 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        <div className={styles.logo}>
+        <button 
+          className={styles.logo}
+          onClick={() => scrollToSection('hero')}
+          aria-label="Powrót do strony głównej"
+        >
           <img src="/logos/logo5.png" alt="Logo" className={styles.logo5} />
           <span className={styles.logoText}>Ludzie od Koparek</span>
-        </div>
+        </button>
 
         <button 
           className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}

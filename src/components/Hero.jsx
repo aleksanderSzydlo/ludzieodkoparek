@@ -6,14 +6,14 @@ const Hero = () => {
   };
 
   const scrollToContact = () => {
-    const element = document.getElementById('kontakt');
+    const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <div className={styles.overlay}></div>
       <div className={styles.container}>
         <div className={styles.content}>
