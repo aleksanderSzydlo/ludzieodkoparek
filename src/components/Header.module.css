@@ -44,7 +44,7 @@
 }
 
 .logo img {
-  height: 80px;
+  height: 60px;
   width: auto;
   max-width: none;
   object-fit: contain;
@@ -69,7 +69,7 @@
 }
 
 .logo5 {
-  height: 80px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   border-radius: 12px;
@@ -161,6 +161,8 @@
   cursor: pointer;
   padding: 0.5rem;
   z-index: 1001;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .hamburger span {
@@ -186,11 +188,16 @@
 /* Mobile styles */
 @media (max-width: 768px) {
   .container {
-    padding: 1rem;
+    padding: 0.7rem 1rem;
   }
 
   .logo {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    gap: 0.6rem;
+  }
+
+  .logoText {
+    font-size: 0.85rem;
   }
 
   .logoIcon {
@@ -201,27 +208,35 @@
     display: flex;
   }
 
+  .hamburger span {
+    width: 22px;
+    height: 2.5px;
+  }
+
   .nav {
     position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    max-width: 300px;
-    height: 100vh;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
     background: #1a1a1a;
-    transition: right 0.3s ease;
-    padding-top: 80px;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    padding-top: 0;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
   }
 
   .nav.navOpen {
-    right: 0;
+    left: 0;
   }
 
   .navList {
     flex-direction: column;
     gap: 0;
     align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .navList li {
@@ -230,9 +245,13 @@
 
   .navList li button {
     width: 100%;
-    text-align: left;
-    padding: 1.25rem 2rem;
-    font-size: 1.1rem;
+    text-align: center;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navList li button::after {
@@ -241,7 +260,13 @@
 
   .ctaButton {
     border-radius: 0 !important;
-    margin-top: 1rem;
+    margin-top: 0 !important;
+    background: #ffa500 !important;
+    padding: 1.2rem 1.5rem !important;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
